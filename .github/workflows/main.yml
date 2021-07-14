@@ -29,5 +29,5 @@ jobs:
             role-external-id: ${{ secrets.AWS_ROLE_EXTERNAL_ID }}
             role-duration-seconds: 1200
         - name: CDK deploy
-            working-directory: ./cdk
-            run: npx cdk deploy --require-approval never
+          working-directory: ./cdk
+          run: npx cdk deploy --require-approval never
